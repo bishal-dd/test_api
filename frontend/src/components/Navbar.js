@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -20,14 +21,14 @@ export default function Navbar() {
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <Link to="/" class="nav-link active">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  about
-                </a>
+                <Link to="/add" class="nav-link active">
+                  Add Friends
+                </Link>
               </li>
             </ul>
           </div>
